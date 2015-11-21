@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <title>GadgedFreak</title>
+    <!-- Custom style for this page-->
+
+    <style>
+    </style>
+
+    <!--<script src="../js/modernizr.js"></script>-->
+
+</head>
+<body>
+<!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">GadgedFreak</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a   href="index.html">Home</a>
+                </li>
+                <li class="dropdown-menu-right dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Devices<b class="caret"></b> </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">Apple</a>
+                        </li>
+                        <li>
+                            <a href="#">Samsung</a>
+                        </li>
+                        <li>
+                            <a href="#">HTC</a>
+                        </li>
+                        <li>
+                            <a href="#">Nokia</a>
+                        </li>
+                        <li>
+                            <a href="#">Motorola</a>
+                        </li>
+                        <li>
+                            <a href="#">Lg</a>
+                        </li>
+                        <li>
+                            <a href="#">Lenovo</a>
+                        </li>
+                        <li>
+                            <a href="#">HUAWEI</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Reviews</a>
+                </li>
+                <li>
+                    <a href="#">Compare</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Forum</a>
+                </li>
+                <li class="navbar-selected">
+                    <a style="color: #fff" href="#">Contact</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a  href="account/login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<!-- /. Navigation-->
+<div class="container content-wrapper">
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Map Column -->
+        <div class="col-md-8">
+            <!-- Embedded Google Map -->
+            <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?hl=en&q= Večna pot 113, 1000 Ljubljana&ie=UTF8&t=roadmap&z=11&iwloc=B&output=embed"></iframe>
+        </div>
+        <!-- Contact Details Column -->
+        <div class="col-md-4">
+        <div class="col-md-12" style="background-color: #fff">
+            <h3>Contact Details</h3>
+            <p>
+                Večna pot 113,<br> 1000 Ljubljana<br>
+            </p>
+            <p><i class="fa fa-phone"></i>
+                <abbr title="Phone">P</abbr>: (01) 479 80 00</p>
+            <p><i class="fa fa-envelope-o"></i>
+                <abbr title="Email">E</abbr>: <a href="mailto:david@baselj.com">david@baselj.com</a>
+            </p>
+            <p><i class="fa fa-clock-o"></i>
+                <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+            <ul class="list-unstyled list-inline list-social-icons">
+                <li>
+                    <a href="http://www.baselj.com/"><i class="fa fa-external-link-square fa-2x"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/david-ba%C5%A1elj-66b16691"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                </li>
+                <!--<li>-->
+                    <!--<a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>-->
+                <!--</li>-->
+            </ul>
+        </div>
+        </div>
+    </div>
+    <!-- /.row -->
+    <!-- Contact Form -->
+    <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <div class="row" style="padding-top: 15px;">
+        <div class="col-md-8">
+            <div class="col-md-12" style="background-color: #fff;">
+                <h3>Send us a Message</h3>
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Full Name:</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Email Address:</label>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Message:</label>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary" style="margin-bottom: 15px;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <footer>
+        <!--<div class="navbar navbar-default navbar-fixed-bottom">-->
+        <hr style="margin-bottom: 5px">
+        <p class="text-muted text-center">GadgedFreak &copy; 2015</p>
+        <!--</div>-->
+    </footer>
+</div>
+
+<!--<div class="navbar-fixed-bottom text-center">-->
+<!--&copy;GadgedFreak 2015-->
+<!--</div>-->
+
+
+<script src="../js/jquery-2.1.4.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

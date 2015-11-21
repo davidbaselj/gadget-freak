@@ -1,0 +1,164 @@
+body{
+    background: linear-gradient(to bottom, #EFEFEF, #F7F6F1 ) fixed no-repeat;
+    height: 100%;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.content-wrapper{
+    padding-top: 20px;
+}
+
+.navbar.navbar-default.navbar-fixed-bottom{
+    height: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.navbar-custom{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.navbar-custom .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #ae4928;
+    /*background-color: #722e18;*/
+    color: #ffffff;
+}
+
+.navbar-custom .dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+    background-color: #ae4928;
+    background-image: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/*.dropdown:hover .dropdown-menu{*/
+    /*display: block;*/
+/*}*/
+
+.navbar-selected {
+    !important;
+    background-color: #ae4928;
+    color: #ffffff;
+}
+.navbar-custom .dropdown-menu-right .open a {
+    background-color: #ae4928;
+    background-image: none;
+}
+
+.navbar-custom .dropdown-menu {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar-custom .dropdown-menu .divider {
+    margin: 0px;
+}
+
+footer{
+    /*background-image: url("../img/carbon-fiber100.png");*/
+}
+
+/* Account css */
+.login-container{
+    padding-top: 50px;
+}
+
+.panel-login {
+    border-color: #ccc;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+    color: #00415d;
+    background-color: #fff;
+    border-color: #fff;
+    text-align:center;
+}
+.panel-login>.panel-heading a{
+    text-decoration: none;
+    color: #777;
+    font-weight: bold;
+    font-size: 14px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+    color:  #ae4928;
+    font-size: 16px;
+}
+.panel-login>.panel-heading hr{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    clear: both;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+    height: 35px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+    outline:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: #ccc;
+    /*border-color: #ae4928;*/
+    /*border-color: #bb3e34;*/
+}
+.btn-login {
+    background-color: #59B2E0;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    height: 30px;
+    font-weight: normal;
+    padding: 0;
+    text-transform: uppercase;
+}
+.btn-login:hover,
+.btn-login:focus {
+    color: #fff;
+    background-color: #53A3CD;
+    border-color: #ccc;
+}
+.forgot-password {
+    text-decoration: underline;
+    color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+    text-decoration: underline;
+    color: #666;
+}
+
+.btn-register {
+    background-color: #59B2E0;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    border: 1px #59B2E0;
+}
+.btn-register:hover,
+.btn-register:focus {
+    color: #fff;
+    background-color: #53A3CD;
+    border-color: #ccc;
+}
