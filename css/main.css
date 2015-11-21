@@ -3,7 +3,7 @@ body{
     height: 100%;
 
     padding-top: 50px;
-    padding-bottom: 50px;
+    /*padding-bottom: 50px;*/
 }
 
 .content-wrapper{
@@ -162,3 +162,31 @@ footer{
     background-color: #53A3CD;
     border-color: #ccc;
 }
+
+.blog-title{
+    color: #666;
+}
+.blog-title:hover{
+    color:  #ae4928;
+}
+
+
+.btn-read-more{
+    background-color: #59B2E0;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    border: 1px #59B2E0;
+    margin-bottom: 10px;
+}
+
+.btn-read-more:hover{
+    color: #fff;
+    background-color: #53A3CD;
+    border-color: #ccc;
+}
+
+
