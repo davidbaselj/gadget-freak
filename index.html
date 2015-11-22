@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link href="css/c3.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/main.css">
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -17,6 +18,19 @@
     <!-- Custom style for this page-->
 
     <style>
+        h3{
+            margin-top: 15px;
+            color: #666;
+        }
+
+        .custom-list i {
+            color:  #555;
+        }
+
+        .custom-list a {
+            color: #666;
+        }
+
     </style>
 
     <!--<script src="../js/modernizr.js"></script>-->
@@ -104,7 +118,60 @@
         <!-- /.container -->
     </nav>
     <!-- /. Navigation-->
-    <div class="container">
+    <div class="container content-wrapper">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="col-md-12" style="background-color: #fff">
+                    <h3 style="margin-bottom: 0px;">Latest post from Blog</h3><hr style="margin-top: 0px;">
+                    <h3>
+                        <a href="blog/blog-post5.html" class="blog-title">Apple Pencil torn to bits by the folks at iFixIt</a>
+                    </h3>
+                    <p><i class="fa fa-clock-o"></i> Posted on November 19, 2015 at 10:00 PM</p>
+                    <hr>
+                    <a href="blog/blog-post5.html">
+                        <img class="img-responsive img-hover" src="img/blogPost1.jpg" alt="">
+                    </a>
+                    <br>
+                    <p>The iPad finally got its own smart stylus and it’s quite a looker compared to other smart styluses out there. That beauty comes at a cost though. Apple wants you to throw down $99 for it. A bit crazy, considering you just spent at least $799 on...</p>
+                    <a class="btn btn-read-more" href="blog/blog-post5.html">Read More <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-12" style="background-color: #fff">
+                    <h3>Latest devices added</h3>
+                    <ul class="list-unstyled custom-list">
+                        <li>
+                            <a href="devices/iphone6.html"><i class="fa fa-mobile fa-lg"></i> Apple Iphone6</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-mobile fa-lg"></i> Samsung Galaxy J3</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-tablet fa-lg"></i> Apple iPad Pro</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-mobile fa-lg"></i> Samsung Galaxy S6 edge+</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-mobile fa-lg"></i> LG G3 855</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-tablet fa-lg"></i> Apple iPad Mini 4</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-12" style="background-color: #fff; margin-top: 20px;">
+                        <h3 class="text-center">Smartphone OS market share</h3>
+                        <div id="market-share-graph">
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        <!--<a href="http://www.idc.com/prodserv/smartphone-os-market-share.jsp"><img src="http://www.idc.com/prodserv/smartphone-ms-img/chart-ww-smartphone-os-market-share.png" alt="IDC: Smartphone OS Market Share 2015, 2014, 2013, and 2012 Chart" style="width: 100%; max-width: 979px;"></a>-->
+
 
         <footer>
             <!--<div class="navbar navbar-default navbar-fixed-bottom">-->
@@ -116,6 +183,28 @@
 
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.min.js" charset="utf-8"></script>
+    <script src="js/c3.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+        var chart = c3.generate({
+            bindto: '#market-share-graph',
+            data: {
+                columns: [
+                    ['Android', 82.8],
+                    ['iOS', 13.9 ],
+                    ['Windows Phone', 2.6],
+                    ['BlackBerry OS', 0.3],
+                    ['Others',0.4]
+                ],
+                type: 'donut'
+            }
+//            donut: {
+//                title: "Iris Petal Width"
+//            }
+        });
+    </script>
+
 </body>
 </html>
