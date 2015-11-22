@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="../css/main.css">
     <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <title>GadgetFreak Recover account</title>
+    <title>GadgetFreak</title>
     <!-- Custom style for this page-->
 
     <style>
     </style>
 
     <!--<script src="../js/modernizr.js"></script>-->
-    <!---->
+
 </head>
 <body>
 <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
@@ -41,11 +41,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li>
-                    <a href="../index.html">Home</a>
+                <li >
+                    <a  href="../index.html">Home</a>
                 </li>
                 <li class="dropdown-menu-right dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Devices<b class="caret"></b> </a>
+                    <a href="#" class="dropdown-toggle navbar-selected" style="color: #fff;" data-toggle="dropdown">Devices<b class="caret"></b> </a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="../devices/devices.html">All devices</a>
@@ -84,18 +84,18 @@
                     <a href="#">Compare</a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="../blog/blog.html">Blog</a>
                 </li>
                 <li>
                     <a href="#">Forum</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="../contact.html">Contact</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="login.html">Login</a>
+                    <a  href="../account/login.html">Login</a>
                 </li>
             </ul>
         </div>
@@ -104,40 +104,51 @@
     <!-- /.container -->
 </nav>
 <!-- /. Navigation-->
+<div class="container content-wrapper">
 
-<!-- page content-->
-<div class="container login-container">
+    <div class="row" style="padding-bottom: 20px;">
+        <div class="col-md-12">
+            <form action="#">
+                <div class="input-group">
+                    <input type="text" class="form-control search-box" placeholder="Search device...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
     <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-            <div class="panel panel-login">
-                <div class="panel-heading">
-                    <div class="row">
-                        <h3>Recover account</h3>
-                    </div>
-                    <hr>
-                </div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <form id="recover-form" action="login.html" method="post" role="form">
-                                <div class="form-group">
-                                    <span id="email-recover" style="color: #ae4928;"></span>
-                                    <input type="email" name="email" id="emailRecover" tabindex="1" class="form-control" placeholder="Email Address" value="">
-                                </div>
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-sm-8 col-sm-offset-2">
-                                            <input type="submit" name="recover-submit" id="recover-submit" tabindex="4" class="form-control btn btn-register" value="Recover">
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-lg-12" style="background-color: #fff">
+            <div class="col-lg-12">
+                <h2 class="page-header text-center" style="margin-top: 10px;">Apple all devices</h2>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-xs-3 thumb">
+                <a class="thumbnail text-center" href="iphone6.html">Iphone 6
+                    <img class="img-responsive" src="../img/iphone6.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-3 thumb">
+                <a class="thumbnail text-center" href="#">Iphone 5
+                    <img class="img-responsive" src="../img/iphone5.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-3 thumb">
+                <a class="thumbnail text-center" href="#">Iphone 4
+                    <img class="img-responsive" src="../img/iphone4.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-3 thumb">
+                <a class="thumbnail text-center" href="#">Iphone 3
+                    <img class="img-responsive" src="../img/iphone3.jpg" alt="">
+                </a>
             </div>
         </div>
     </div>
+
     <footer>
         <!--<div class="navbar navbar-default navbar-fixed-bottom">-->
         <hr style="margin-bottom: 5px">
