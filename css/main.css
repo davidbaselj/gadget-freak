@@ -327,6 +327,32 @@ h2{
     margin-bottom: 20px;
 }
 
+/* Forum style */
+.forum.table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.forum .fa {
+    width: 1em;
+    text-align: center;
+}
+
+.forum  h3 {
+    margin: 0;
+}
+
+.forum  h4 {
+    margin: 0;
+}
+
+.forum.table th.cell-stat {
+    width: 4em;
+}
+
+.forum.table th.cell-stat-2x {
+    width: 14em;
+}
+
 @media(max-width:767px){
 
 }
